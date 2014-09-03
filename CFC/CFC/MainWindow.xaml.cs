@@ -28,7 +28,31 @@ namespace CFC
         private void atualizar_resumo_Click(object sender, RoutedEventArgs e)
         {
             AtualizarResumo at = new AtualizarResumo();
+            at.Owner = this;
             at.Show();
         }
+
+        private void Sair_Click(object sender, RoutedEventArgs e)
+        {
+            var response = MessageBox.Show("Tem certeza que seseja sair?", "Sair",
+                                 MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+            if (response == MessageBoxResult.No)
+            {
+                return;
+            }
+            else
+            {
+                Application.Current.Shutdown();
+            }
+        }
+
+        private void Sobre_Click(object sender, RoutedEventArgs e)
+        {
+            Sobre sobre = new Sobre();
+            sobre.Owner = this;
+            sobre.Show();
+        }
+
+
     }
 }

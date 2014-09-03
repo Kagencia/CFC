@@ -1,9 +1,9 @@
 ﻿<Window x:Class="CFC.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Sistema CFC" Height="800" Width="960" WindowState="Maximized">
+        Title="Sistema CFC" Height="600" Width="960" WindowState="Maximized" ResizeMode="CanResizeWithGrip" ShowInTaskbar="True" Topmost="True" HorizontalAlignment="Stretch" IsManipulationEnabled="False">
     <DockPanel>
-        <Menu DockPanel.Dock="Top" Height="23">
+        <Menu x:Name="Arquivo" DockPanel.Dock="Top" Height="18">
             <MenuItem Header="_Arquivo">
                 <MenuItem x:Name="atualizar_resumo" Header="_Atualizar resumo" Click="atualizar_resumo_Click" >
                     <MenuItem.Icon>
@@ -16,7 +16,7 @@
                 <MenuItem Header="_Configurar rede" />
                 <MenuItem Header="Apa_gar configuração de rede" />
                 <Separator />
-                <MenuItem Header="_Sair" />
+                <MenuItem x:Name="Sair" Header="_Sair" Click="Sair_Click" />
             </MenuItem>
             <MenuItem Header="Cadastro">
                 <MenuItem Header="Alunos" />
@@ -79,7 +79,7 @@
             <MenuItem Header="Ajuda">
                 <MenuItem Header="Como utilizar a ajuda" />
                 <MenuItem Header="Manual do programa (PDF)" />
-                <MenuItem Header="Sobre o programa" />
+                <MenuItem x:Name="Sobre" Header="Sobre o programa" Click="Sobre_Click" />
                 <MenuItem Header="Sobre a Kagencia" />
                 <MenuItem Header="Contrato de licenca de uso" />
                 <Separator />
