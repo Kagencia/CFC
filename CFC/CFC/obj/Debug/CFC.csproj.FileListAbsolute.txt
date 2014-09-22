@@ -30,3 +30,20 @@ C:\Users\Klaus\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Sobre.baml
 C:\Users\Klaus\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Sobre.g.cs
 C:\Users\Klaus\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\AtualizarResumo.baml
 C:\Users\Klaus\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\AtualizarResumo.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\CFC.exe.config
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.exe
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.pdb
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\CFC.exe
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\CFC.pdb
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.csprojResolveAssemblyReference.cache
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\AtualizarResumo.baml
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\MainWindow.baml
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Sobre.baml
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\AtualizarResumo.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\MainWindow.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Sobre.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\App.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC_MarkupCompile.cache
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.g.resources
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.Properties.Resources.resources
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.csproj.GenerateResource.Cache
