@@ -12,16 +12,13 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CFC
+namespace CFC.Views
 {
     /// <summary>
-    /// Interaction logic for AtualizarResumo.xaml
+    /// Interaction logic for splash.xaml
     /// </summary>
-    public partial class AtualizarResumo : Window
+    public partial class splash : Window
     {
-        public AtualizarResumo()
-        {
-            InitializeComponent();
-        }
+    
     }
 }
