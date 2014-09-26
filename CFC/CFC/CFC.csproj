@@ -74,6 +74,8 @@
     </ApplicationDefinition>
     <Compile Include="conexao.cs" />
     <Compile Include="Connection.cs" />
+    <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="Structs.cs" />
     <Compile Include="Views\Client.cs" />
     <Compile Include="Views\ListBoxItemEX.cs" />
     <Compile Include="Views\Sobre.xaml.cs">

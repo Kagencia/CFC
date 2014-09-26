@@ -5,12 +5,12 @@
         
         Loaded="Window_Loaded"
         
-        Title="Sistema CFC" Height="868" Width="1170" WindowState="Maximized" ResizeMode="CanResizeWithGrip" ShowInTaskbar="True" Topmost="True" HorizontalAlignment="Stretch" IsManipulationEnabled="False">
+        Title="Sistema CFC" Height="868" Width="1170" WindowState="Maximized" ResizeMode="CanResizeWithGrip" ShowInTaskbar="True" HorizontalAlignment="Stretch" IsManipulationEnabled="False" VerticalAlignment="Center">
 
     <DockPanel>
         <Menu x:Name="Arquivo" DockPanel.Dock="Top" Height="18" HorizontalAlignment="Stretch" VerticalAlignment="Top">
             <MenuItem Header="_Arquivo">
-                <MenuItem x:Name="contas_a_pagar" Header="_Contas a pagar" Click="contas_a_pagar_Click" >
+                <MenuItem x:Name="contas_a_pagar" Header="_Contas a pagar" Click="clickHook" >
                     <MenuItem.Icon>
                         <Image Source="/Images/Icons/arrow.png" />
                     </MenuItem.Icon>
@@ -21,7 +21,7 @@
                 <MenuItem Header="_Configurar rede" />
                 <MenuItem Header="Apa_gar configuração de rede" />
                 <Separator />
-                <MenuItem x:Name="Sair" Header="_Sair" Click="Sair_Click" />
+                <MenuItem x:Name="Sair" Header="_Sair" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Cadastro">
                 <MenuItem Header="Alunos" />
@@ -118,9 +118,8 @@
                     </StackPanel>
                     
                     <Grid Grid.RowSpan="2">
-                        <StackPanel>
-                            <local:ListBoxItemEX ItemName="teste" />
-                            <local:ListBoxItemEX ItemName="teste" />
+                        <StackPanel Name="itens">
+                            
                         </StackPanel>
                     </Grid>
                     
@@ -153,7 +152,11 @@
                 </Grid>
             </GroupBox>
 
-            <GroupBox Header="Contas a Receber" Margin="20" Grid.Column="2" Height="150"/>
+            <GroupBox Name="Item2" Header="Contas a Receber" Margin="20" Grid.Column="2" Height="150">
+                <StackPanel Name="itens2">
+                    
+                </StackPanel>
+            </GroupBox>
 
             <GroupBox Header="Resumo Financeiro" Margin="20" Grid.Column="1" Grid.Row="1">
                 <ListBox Margin="0" DisplayMemberPath="LastName" VerticalAlignment="Top" BorderThickness="0">
