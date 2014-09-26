@@ -1,6 +1,10 @@
 ﻿<Window x:Class="CFC.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CFC.Views"
+        
+        Loaded="Window_Loaded"
+        
         Title="Sistema CFC" Height="868" Width="1170" WindowState="Maximized" ResizeMode="CanResizeWithGrip" ShowInTaskbar="True" Topmost="True" HorizontalAlignment="Stretch" IsManipulationEnabled="False">
 
     <DockPanel>
@@ -112,7 +116,15 @@
                     </Grid.RowDefinitions>
                     <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="5,5,5,0">
                     </StackPanel>
-                    <DataGrid Name="Contas_a_pagar_resumo" AutoGenerateColumns="False" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.RowSpan="2">
+                    
+                    <Grid Grid.RowSpan="2">
+                        <StackPanel>
+                            <local:ListBoxItemEX ItemName="teste" />
+                            <local:ListBoxItemEX ItemName="teste" />
+                        </StackPanel>
+                    </Grid>
+                    
+                    <DataGrid Visibility="Hidden" Name="Contas_a_pagar_resumo" AutoGenerateColumns="False" Margin="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.RowSpan="2">
                         <DataGrid.Columns>
                             <DataGridTextColumn x:Name="Contas" Binding="{Binding Path=Name}" Header="Contas" Width="5*">
                             </DataGridTextColumn>

@@ -52,3 +52,6 @@ C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\splash.baml
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\splash.g.cs
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\ContasAPagar.baml
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\ContasAPagar.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC_MarkupCompile.lref
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Themes\Generic.baml

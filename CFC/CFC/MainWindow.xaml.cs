@@ -58,6 +58,15 @@ namespace CFC
        
         }
 
+        private Connection conn;
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            conn = new Connection(@"Data Source=(localdb)\Projects;Initial Catalog=cfcdb1;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False");
+
+            if(conn.Connect())
+                MessageBox.Show("success");
+        }
+
 
     }
 }

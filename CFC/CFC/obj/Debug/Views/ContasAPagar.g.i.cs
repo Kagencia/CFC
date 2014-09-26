@@ -9,6 +9,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using CFC.Views;
 using System;
 using System.Diagnostics;
 using System.Windows;

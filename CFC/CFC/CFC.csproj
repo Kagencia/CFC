@@ -73,13 +73,19 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="conexao.cs" />
+    <Compile Include="Connection.cs" />
     <Compile Include="Views\Client.cs" />
+    <Compile Include="Views\ListBoxItemEX.cs" />
     <Compile Include="Views\Sobre.xaml.cs">
       <DependentUpon>Sobre.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\splash.xaml.cs">
       <DependentUpon>splash.xaml</DependentUpon>
     </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ContasAPagar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
