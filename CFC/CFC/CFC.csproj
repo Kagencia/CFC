@@ -74,6 +74,12 @@
     </ApplicationDefinition>
     <Compile Include="Connection.cs" />
     <Compile Include="ExtensionMethods.cs" />
+    <Compile Include="login.xaml.cs">
+      <DependentUpon>login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.xaml.cs">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Structs.cs" />
     <Compile Include="Views\Acesso\Acesso_Alterar_Senha.xaml.cs">
       <DependentUpon>Acesso_Alterar_Senha.xaml</DependentUpon>
@@ -215,6 +221,14 @@
     <Compile Include="Views\Utilitarios\Utilitarios_Manutencao_De_Banco_De_Dados.xaml.cs">
       <DependentUpon>Utilitarios_Manutencao_De_Banco_De_Dados.xaml</DependentUpon>
     </Compile>
+    <Page Include="login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -447,13 +461,8 @@
     <Resource Include="Images\user.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="cfcdb.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="cfcdb_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>cfcdb.mdf</DependentUpon>
-    </Content>
+    <Resource Include="Images\splash.png" />
+    <Resource Include="Images\kagencia-logo-medio.png" />
     <Resource Include="Images\Icons\arrow.png" />
     <Resource Include="Images\PS_Klaus.jpg" />
   </ItemGroup>
@@ -474,7 +483,9 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\bg_user.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

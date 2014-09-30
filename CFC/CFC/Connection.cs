@@ -88,5 +88,34 @@ namespace CFC
             }
             return ret.ToArray();
         }
+
+        public enum loginReturn
+        {
+            WRONG_PASS,
+            INVALID_USER,
+            SUCCESS
+        }
+
+        public loginReturn login(string user, string pass)
+        {
+            using(SqlDataReader r = new SqlCommand("SELECT * FROM Usuarios WHERE Usuario = '" + user + "'", conn).ExecuteReader())
+            {
+                if(r.HasRows)
+                {
+                    r.Read();
+
+                    string _password = r.GetColumn<string>(2);
+
+                    if (pass == _password)
+                        return loginReturn.SUCCESS;
+                    else
+                        return loginReturn.WRONG_PASS;
+                }
+                else
+                {
+                    return loginReturn.INVALID_USER;
+                }
+            }
+        }
     }
 }

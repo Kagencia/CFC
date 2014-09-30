@@ -8,7 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cfcdb.mdf")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("cfcdb_log.ldf")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/bg_user.png")]
 
 

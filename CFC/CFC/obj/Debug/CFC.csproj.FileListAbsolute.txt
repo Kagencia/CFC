@@ -35,7 +35,6 @@ C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.exe
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.pdb
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\CFC.exe
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\CFC.pdb
-C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.csprojResolveAssemblyReference.cache
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\MainWindow.baml
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\MainWindow.g.cs
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\App.g.cs
@@ -43,9 +42,6 @@ C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC_MarkupCompile
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.g.resources
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.Properties.Resources.resources
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.csproj.GenerateResource.Cache
-C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\cfcdb.mdf
-C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\bin\Debug\cfcdb_log.ldf
-C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC_Content.g.cs
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\splash.baml
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\splash.g.cs
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\GeneratedInternalTypeHelper.g.cs
@@ -141,3 +137,8 @@ C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Relatorios\
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Relatorios\Relatorios_Grade_De_Aula_Do_Instrutor.g.cs
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Relatorios\Relatorios_Graficos.g.cs
 C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\Views\Relatorios\Relatorios_Veiculos.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\SplashScreen.baml
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\SplashScreen.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\login.baml
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\login.g.cs
+C:\Users\Klaus Bernardo\Documents\GitHub\CFC\CFC\CFC\obj\Debug\CFC.csprojResolveAssemblyReference.cache

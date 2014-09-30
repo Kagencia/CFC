@@ -23,5 +23,34 @@ namespace CFC.Views.Cadastro
         {
             InitializeComponent();
         }
+
+        private void foto_aluno_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // Create OpenFileDialog 
+            Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
+
+
+
+            // Set filter for file extension and default file extension 
+            dlg.DefaultExt = ".jpg";
+            dlg.Filter = "JPG Files (*.jpg)|*.jpg|JPEG Files (*.jpeg)|*.jpeg|PNG Files (*.png)|*.png";
+
+
+            // Display OpenFileDialog by calling ShowDialog method 
+            Nullable<bool> result = dlg.ShowDialog();
+
+
+
+          
+
+            // Get the selected file name and display in a TextBox 
+            if (result == true)
+            {
+                // Open document 
+                string filename = dlg.FileName;
+                ImageSource imagem = new BitmapImage(new Uri(filename));
+                foto_aluno.Source = imagem;
+            }
+        }
     }
 }

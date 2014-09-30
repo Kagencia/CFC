@@ -1,0 +1,10 @@
+﻿<Window x:Class="CFC.SplashScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="SplashScreen" Height="339.936" Width="617.426"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen"
+        Loaded="Window_Loaded">
+    <Grid>
+        <Image Source="pack://application:,,,/CFC;component/Images/splash.png" Stretch="UniformToFill" />
+    </Grid>
+</Window>

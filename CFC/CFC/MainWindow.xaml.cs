@@ -34,6 +34,12 @@ namespace CFC
             InitializeComponent();
         }
 
+        public void ShowEx(Connection conn)
+        {
+            this.conn = conn;
+            this.Show();
+        }
+
         private void clickHook(object sender, RoutedEventArgs e)
         {
             /*Pq Sender as Control? 
@@ -314,6 +320,12 @@ namespace CFC
             {
                 MessageBox.Show("Connection Failed!");
             }
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            e.Cancel = true;
+            clickHook(Sair, null);
         }
 
 
