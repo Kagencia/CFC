@@ -1,0 +1,8 @@
+﻿<Window x:Class="CFC.Views.Arquivo.Arquivo_Atualizar_Base_De_Dados"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Arquivo_Atualizar_Base_De_Dados" Height="300" Width="300">
+    <Grid>
+        
+    </Grid>
+</Window>

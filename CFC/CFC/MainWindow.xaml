@@ -15,80 +15,78 @@
                         <Image Source="/Images/Icons/arrow.png" />
                     </MenuItem.Icon>
                 </MenuItem>
-                <MenuItem Header="A_tualizar base de dados" />
-                <MenuItem Header="A_pagar banco de dados" />
+                <MenuItem x:Name="atualizar_base_dados" Header="A_tualizar base de dados" Click="clickHook" />
+                <MenuItem x:Name="apagar_banco_dados" Header="A_pagar banco de dados" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="_Configurar rede" />
-                <MenuItem Header="Apa_gar configuração de rede" />
+                <MenuItem x:Name="configurar_rede" Header="_Configurar rede" Click="clickHook" />
                 <Separator />
                 <MenuItem x:Name="Sair" Header="_Sair" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Cadastro">
-                <MenuItem Header="Alunos" />
-                <MenuItem Header="Bancos" />
-                <MenuItem Header="Colaboradores" />
-                <MenuItem Header="Contratos" />
-                <MenuItem Header="Empresa" />
-                <MenuItem Header="Tabela de preços" />
-                <MenuItem Header="Veículos" />
+                <MenuItem Header="Alunos" x:Name="cadastro_alunos" Click="clickHook" />
+                <MenuItem Header="Bancos" x:Name="cadastro_bancos" Click="clickHook" />
+                <MenuItem Header="Colaboradores" x:Name="cadastro_colaboradores" Click="clickHook" />
+                <MenuItem Header="Contratos" x:Name="cadastro_contratos" Click="clickHook" />
+                <MenuItem Header="Empresas" x:Name="cadastro_empresas" Click="clickHook" />
+                <MenuItem Header="Tabela de preços" x:Name="cadastro_tbl_precos" Click="clickHook" />
+                <MenuItem Header="Veículos" x:Name="cadastro_veiculos" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Cursos">
-                <MenuItem Header="Configurar cursos" />
-                <MenuItem Header="Turmas teóricas" />
-                <MenuItem Header="Lista de exames" />
+                <MenuItem x:Name="configurar_cursos" Header="Configurar cursos" Click="clickHook" />
+                <MenuItem x:Name="turmas_teoricas" Header="Turmas teóricas" Click="clickHook" />
+                <MenuItem x:Name="lista_de_exames" Header="Lista de exames" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Agendamento de aulas" />
-                <MenuItem Header="Marcar frequencia" />
+                <MenuItem x:Name="agendamento_de_aulas" Header="Agendamento de aulas" Click="clickHook" />
+                <MenuItem x:Name="marcar_frequencia" Header="Marcar frequencia" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Financeiro">
-                <MenuItem Header="Caixa" />
-                <MenuItem Header="Listagem de pagamentos" />
+                <MenuItem x:Name="caixa" Header="Caixa" Click="clickHook" />
+                <MenuItem x:Name="listagem_de_pagamentos" Header="Listagem de pagamentos" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Receber pagamento por número" />
+                <MenuItem x:Name="receber_pagamento_numero" Header="Receber pagamento por número" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Impressos">
-                <MenuItem Header="Contrato" />
-                <MenuItem Header="Ficha cadastral do aluno" />
+                <MenuItem x:Name="contrato" Header="Contrato" Click="clickHook" />
+                <MenuItem x:Name="ficha_cadastral_aluno" Header="Ficha cadastral do aluno" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Carnê de pagamentos" />
+                <MenuItem x:Name="carne_pagamentos" Header="Carnê de pagamentos" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Relatórios">
-                <MenuItem Header="Alunos" />
-                <MenuItem Header="Aniversariantes" />
-                <MenuItem Header="Colaboradores" />
-                <MenuItem Header="Agenda de aulas" />
-                <MenuItem Header="Exames" />
-                <MenuItem Header="Grade de aulas do instrutor" />
-                <MenuItem Header="Veículos" />
+                <MenuItem x:Name="rel_alunos" Header="Alunos" Click="clickHook" />
+                <MenuItem x:Name="aniversariantes" Header="Aniversariantes" Click="clickHook" />
+                <MenuItem x:Name="agenda_de_aula" Header="Agenda de aulas" Click="clickHook" />
+                <MenuItem x:Name="exames" Header="Exames" Click="clickHook" />
+                <MenuItem x:Name="grade_aulas_instrutor" Header="Grade de aulas do instrutor" Click="clickHook" />
+                <MenuItem x:Name="veiculos" Header="Veículos" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Extrato financeiro do aluno" />
-                <MenuItem Header="Devedores" />
+                <MenuItem x:Name="extrato_financeiro_aluno" Header="Extrato financeiro do aluno" Click="clickHook" />
+                <MenuItem x:Name="devedores" Header="Devedores" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Gráficos" />
+                <MenuItem x:Name="graficos" Header="Gráficos" Click="clickHook" />
             </MenuItem>
-            <MenuItem Header="Utilitários">
-                <MenuItem Header="Configurações" />
-                <MenuItem Header="Backup / restauração" />
-                <MenuItem Header="Backup rápido" />
+            <MenuItem Header="Utilitários" Click="clickHook">
+                <MenuItem x:Name="configuracoes" Header="Configurações" Click="clickHook" />
+                <MenuItem x:Name="bkp_restauracao" Header="Backup / restauração" Click="clickHook" />
+                <MenuItem x:Name="bkp_rapido" Header="Backup rápido" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Manutenção de banco de dados" />
+                <MenuItem x:Name="manutencao_banco_dados" Header="Manutenção de banco de dados" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Acesso">
-                <MenuItem Header="Alterar usuário" />
-                <MenuItem Header="Alterar senha" />
+                <MenuItem x:Name="alterar_usuario" Header="Alterar usuário" Click="clickHook" />
+                <MenuItem x:Name="alterar_senha" Header="Alterar senha" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Configurações" />
+                <MenuItem x:Name="acesso_configuracoes" Header="Configurações" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Acesso ao banco de dados" />
+                <MenuItem x:Name="acesso_banco_dados" Header="Acesso ao banco de dados" Click="clickHook" />
             </MenuItem>
             <MenuItem Header="Ajuda">
-                <MenuItem Header="Como utilizar a ajuda" />
-                <MenuItem Header="Manual do programa (PDF)" />
-                <MenuItem x:Name="Sobre" Header="Sobre o programa" Click="Sobre_Click" />
-                <MenuItem Header="Sobre a Kagencia" />
-                <MenuItem Header="Contrato de licenca de uso" />
+                <MenuItem x:Name="como_utilizar" Header="Como utilizar a ajuda" Click="clickHook" />
+                <MenuItem x:Name="manual" Header="Manual do programa (PDF)" Click="clickHook" />
+                <MenuItem x:Name="sobre_programa" Header="Sobre o programa" Click="clickHook" />
+                <MenuItem x:Name="sobre_kagencia" Header="Sobre a Kagencia" Click="clickHook" />
+                <MenuItem x:Name="contrato_licenca" Header="Contrato de licenca de uso" Click="clickHook" />
                 <Separator />
-                <MenuItem Header="Revalidar liberação" />
+                <MenuItem x:Name="revalidar" Header="Revalidar liberação" Click="clickHook" />
             </MenuItem>
         </Menu>
         <Grid DockPanel.Dock="Top">
@@ -118,7 +116,7 @@
                     </StackPanel>
                     
                     <Grid Grid.RowSpan="2">
-                        <StackPanel Name="itens">
+                        <StackPanel Name="resumo_contas_a_pagar_lb" Margin="5">
                             
                         </StackPanel>
                     </Grid>
@@ -153,7 +151,7 @@
             </GroupBox>
 
             <GroupBox Name="Item2" Header="Contas a Receber" Margin="20" Grid.Column="2" Height="150">
-                <StackPanel Name="itens2">
+                <StackPanel Name="resumo_contas_a_receber_lb">
                     
                 </StackPanel>
             </GroupBox>
@@ -168,7 +166,6 @@
             </GroupBox>
             <GroupBox Header="Saldo das Contas Bancárias" Margin="20" Grid.Column="2" Grid.Row="1"/>
             <GroupBox Header="Planejamento Financeiro" Margin="20" Grid.Column="1" Grid.Row="2"/>
-            <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="75" Click="Button_Click" Margin="20"/>
 
         </Grid>
     </DockPanel>

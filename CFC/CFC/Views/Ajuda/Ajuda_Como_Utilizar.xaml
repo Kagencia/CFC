@@ -1,0 +1,8 @@
+﻿<Window x:Class="CFC.Views.Ajuda.Ajuda_Como_Utilizar"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Ajuda_Como_Utilizar" Height="300" Width="300">
+    <Grid>
+        
+    </Grid>
+</Window>

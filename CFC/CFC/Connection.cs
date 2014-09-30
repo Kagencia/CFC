@@ -39,17 +39,17 @@ namespace CFC
         }
 
         
-        public Structs.Item[] GetItems()
+        public Structs.conta_a_pagar[] GetContasaPagar()
         {
-            List<Structs.Item> ret = new List<Structs.Item>();
+            List<Structs.conta_a_pagar> ret = new List<Structs.conta_a_pagar>();
 
-            using(SqlDataReader dr = new SqlCommand("SELECT * FROM tabela", conn).ExecuteReader())
+            using(SqlDataReader dr = new SqlCommand("SELECT * FROM Contas_a_Pagar", conn).ExecuteReader())
             {
                 if (dr.HasRows)
                 {
                     while (dr.Read())
                     {
-                        Structs.Item item = new Structs.Item();
+                        Structs.conta_a_pagar item = new Structs.conta_a_pagar();
 
                         /*
                          * GetColumn<string>(1)
@@ -57,7 +57,7 @@ namespace CFC
                          */
 
                         item.Conta = dr.GetColumn<string>(1);
-                        item.Valor = dr.GetColumn<float>(2);
+                        item.Valor = dr.GetColumn<decimal>(2);
 
                         ret.Add(item);
                     }
@@ -67,12 +67,26 @@ namespace CFC
             return ret.ToArray();
         }
 
-       /* public string outrometodo()
+        public Structs.conta_a_receber[] GetContasaReceber()
         {
-            using(SqlDataReader r = new SqlCommand("SELECT * .......", conn).ExecuteReader())
+            List<Structs.conta_a_receber> ret = new List<Structs.conta_a_receber>();
+
+            using(SqlDataReader dr = new SqlCommand("SELECT * FROM Contas_a_Receber", conn).ExecuteReader())
             {
-                
+                if (dr.HasRows)
+                {
+                    while (dr.Read())
+                    {
+                        Structs.conta_a_receber item = new Structs.conta_a_receber();
+
+                        item.Conta = dr.GetColumn<string>(1);
+                        item.Valor = dr.GetColumn<float>(2);
+
+                        ret.Add(item);
+                    }
+                }
             }
-        }*/
+            return ret.ToArray();
+        }
     }
 }

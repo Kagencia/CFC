@@ -9,14 +9,14 @@ namespace CFC
     public static class Structs
     {
 
-        public sealed class Item
+        public sealed class conta_a_pagar
         {
             public int ID;
             public string Conta;
-            public float Valor;
+            public decimal Valor;
         }
 
-        public sealed class Item2
+        public sealed class conta_a_receber
         {
             public int ID;
             public string Conta;

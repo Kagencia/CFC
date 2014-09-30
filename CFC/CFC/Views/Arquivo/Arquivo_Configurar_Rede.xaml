@@ -1,0 +1,8 @@
+﻿<Window x:Class="CFC.Views.Arquivo.Arquivo_Configurar_Rede"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Arquivo_Configurar_Rede" Height="300" Width="300">
+    <Grid>
+        
+    </Grid>
+</Window>

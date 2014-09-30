@@ -72,25 +72,152 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="conexao.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="ExtensionMethods.cs" />
     <Compile Include="Structs.cs" />
+    <Compile Include="Views\Acesso\Acesso_Alterar_Senha.xaml.cs">
+      <DependentUpon>Acesso_Alterar_Senha.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Acesso\Acesso_Alterar_Usuario.xaml.cs">
+      <DependentUpon>Acesso_Alterar_Usuario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Acesso\Acesso_Banco_Dados.xaml.cs">
+      <DependentUpon>Acesso_Banco_Dados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Acesso\Acesso_Configuracoes.xaml.cs">
+      <DependentUpon>Acesso_Configuracoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda\Ajuda_Como_Utilizar.xaml.cs">
+      <DependentUpon>Ajuda_Como_Utilizar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda\Ajuda_Contrato_Licenca_de_Uso.xaml.cs">
+      <DependentUpon>Ajuda_Contrato_Licenca_de_Uso.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda\Ajuda_Manual_Do_Programa.xaml.cs">
+      <DependentUpon>Ajuda_Manual_Do_Programa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda\Ajuda_Revalidar_Liberacao.xaml.cs">
+      <DependentUpon>Ajuda_Revalidar_Liberacao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda\Ajuda_Sobre_a_Kagencia.xaml.cs">
+      <DependentUpon>Ajuda_Sobre_a_Kagencia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ajuda\Ajuda_Sobre_o_Programa.xaml.cs">
+      <DependentUpon>Ajuda_Sobre_o_Programa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Arquivo\Arquivo_Apagar_Banco_De_Dados.xaml.cs">
+      <DependentUpon>Arquivo_Apagar_Banco_De_Dados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Arquivo\Arquivo_Atualizar_Base_De_Dados.xaml.cs">
+      <DependentUpon>Arquivo_Atualizar_Base_De_Dados.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Arquivo\Arquivo_Configurar_Rede.xaml.cs">
+      <DependentUpon>Arquivo_Configurar_Rede.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Arquivo\Arquivo_Contas_A_Pagar.xaml.cs">
+      <DependentUpon>Arquivo_Contas_A_Pagar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Aluno.xaml.cs">
+      <DependentUpon>Cadastro_Aluno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Banco.xaml.cs">
+      <DependentUpon>Cadastro_Banco.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Colaborador.xaml.cs">
+      <DependentUpon>Cadastro_Colaborador.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Contrato.xaml.cs">
+      <DependentUpon>Cadastro_Contrato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Empresa.xaml.cs">
+      <DependentUpon>Cadastro_Empresa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Tabela_de_Precos.xaml.cs">
+      <DependentUpon>Cadastro_Tabela_de_Precos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastro\Cadastro_Veiculo.xaml.cs">
+      <DependentUpon>Cadastro_Veiculo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Client.cs" />
+    <Compile Include="Views\Cursos\Cursos_Agendamento_De_Aulas.xaml.cs">
+      <DependentUpon>Cursos_Agendamento_De_Aulas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Cursos_Configurar_Cursos.xaml.cs">
+      <DependentUpon>Cursos_Configurar_Cursos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Cursos_Lista_De_Exames.xaml.cs">
+      <DependentUpon>Cursos_Lista_De_Exames.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Cursos_Marcar_Frequencia.xaml.cs">
+      <DependentUpon>Cursos_Marcar_Frequencia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cursos\Cursos_Turmas_Teoricas.xaml.cs">
+      <DependentUpon>Cursos_Turmas_Teoricas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Financeiro\Financeiro_Caixa.xaml.cs">
+      <DependentUpon>Financeiro_Caixa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Financeiro\Financeiro_Listagem_De_Pagamentos.xaml.cs">
+      <DependentUpon>Financeiro_Listagem_De_Pagamentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Financeiro\Financeiro_Receber_Pagamento_Por_Numero.xaml.cs">
+      <DependentUpon>Financeiro_Receber_Pagamento_Por_Numero.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Impressos\Impressos_Carne_De_Pagamentos.xaml.cs">
+      <DependentUpon>Impressos_Carne_De_Pagamentos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Impressos\Impressos_Contrato.xaml.cs">
+      <DependentUpon>Impressos_Contrato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Impressos\Impressos_Ficha_Cadastral_Do_Aluno.xaml.cs">
+      <DependentUpon>Impressos_Ficha_Cadastral_Do_Aluno.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ListBoxItemEX.cs" />
-    <Compile Include="Views\Sobre.xaml.cs">
-      <DependentUpon>Sobre.xaml</DependentUpon>
+    <Compile Include="Views\Relatorios\Relatorios_Agenda_De_Aulas.xaml.cs">
+      <DependentUpon>Relatorios_Agenda_De_Aulas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Alunos.xaml.cs">
+      <DependentUpon>Relatorios_Alunos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Aniversariantes.xaml.cs">
+      <DependentUpon>Relatorios_Aniversariantes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Devedores.xaml.cs">
+      <DependentUpon>Relatorios_Devedores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Exames.xaml.cs">
+      <DependentUpon>Relatorios_Exames.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Extrato_Financeiro_Do_Aluno.xaml.cs">
+      <DependentUpon>Relatorios_Extrato_Financeiro_Do_Aluno.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Grade_De_Aula_Do_Instrutor.xaml.cs">
+      <DependentUpon>Relatorios_Grade_De_Aula_Do_Instrutor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Graficos.xaml.cs">
+      <DependentUpon>Relatorios_Graficos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Relatorios\Relatorios_Veiculos.xaml.cs">
+      <DependentUpon>Relatorios_Veiculos.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\splash.xaml.cs">
       <DependentUpon>splash.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Utilitarios\Utilitarios_Backup_Rapido.xaml.cs">
+      <DependentUpon>Utilitarios_Backup_Rapido.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Utilitarios\Utilitarios_Backup_Restauracao.xaml.cs">
+      <DependentUpon>Utilitarios_Backup_Restauracao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Utilitarios\Utilitarios_Configuracoes.xaml.cs">
+      <DependentUpon>Utilitarios_Configuracoes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Utilitarios\Utilitarios_Manutencao_De_Banco_De_Dados.xaml.cs">
+      <DependentUpon>Utilitarios_Manutencao_De_Banco_De_Dados.xaml</DependentUpon>
+    </Compile>
     <Page Include="Themes\Generic.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
-    </Page>
-    <Page Include="Views\ContasAPagar.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -100,18 +227,191 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Views\ContasAPagar.xaml.cs">
-      <DependentUpon>ContasAPagar.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Views\Sobre.xaml">
+    <Page Include="Views\Acesso\Acesso_Alterar_Senha.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Acesso\Acesso_Alterar_Usuario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Acesso\Acesso_Banco_Dados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Acesso\Acesso_Configuracoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ajuda\Ajuda_Como_Utilizar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ajuda\Ajuda_Contrato_Licenca_de_Uso.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ajuda\Ajuda_Manual_Do_Programa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ajuda\Ajuda_Revalidar_Liberacao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ajuda\Ajuda_Sobre_a_Kagencia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ajuda\Ajuda_Sobre_o_Programa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Arquivo\Arquivo_Apagar_Banco_De_Dados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Arquivo\Arquivo_Atualizar_Base_De_Dados.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Arquivo\Arquivo_Configurar_Rede.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Arquivo\Arquivo_Contas_A_Pagar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Aluno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Banco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Colaborador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Contrato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Empresa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Tabela_de_Precos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastro\Cadastro_Veiculo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cursos\Cursos_Agendamento_De_Aulas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cursos\Cursos_Configurar_Cursos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cursos\Cursos_Lista_De_Exames.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cursos\Cursos_Marcar_Frequencia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cursos\Cursos_Turmas_Teoricas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Financeiro\Financeiro_Caixa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Financeiro\Financeiro_Listagem_De_Pagamentos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Financeiro\Financeiro_Receber_Pagamento_Por_Numero.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Impressos\Impressos_Carne_De_Pagamentos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Impressos\Impressos_Contrato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Impressos\Impressos_Ficha_Cadastral_Do_Aluno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Agenda_De_Aulas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Alunos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Aniversariantes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Devedores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Exames.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Extrato_Financeiro_Do_Aluno.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Grade_De_Aula_Do_Instrutor.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Graficos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Relatorios\Relatorios_Veiculos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\splash.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Utilitarios\Utilitarios_Backup_Rapido.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Utilitarios\Utilitarios_Backup_Restauracao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Utilitarios\Utilitarios_Configuracoes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Utilitarios\Utilitarios_Manutencao_De_Banco_De_Dados.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -174,6 +474,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
