@@ -42,7 +42,7 @@ namespace CFC
 
             e.Cancel = true;
 
-            var response = MessageBox.Show("sair?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            var response = MessageBox.Show("Deseja Sair?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
             if (response == MessageBoxResult.Yes)
                 Environment.Exit(0);
@@ -55,23 +55,23 @@ namespace CFC
             CLOSE_TOKEN = 1;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public void login_Click(object sender, RoutedEventArgs e)
         {
 
             if(tblogin.Text == String.Empty || tbsenha.Text == String.Empty)
             {
-                MessageBox.Show("campo vazio");
+                MessageBox.Show("Preencha os Campos Corretamente!");
                 return;
             }
             
             switch(conn.login(tblogin.Text, tbsenha.Text))
             {
                 case Connection.loginReturn.INVALID_USER:
-                    MessageBox.Show("usuario nao encontrado");
+                    MessageBox.Show("Usuário Não Encontrado");
                     break;
 
                 case Connection.loginReturn.WRONG_PASS:
-                    MessageBox.Show("senha incorreta");
+                    MessageBox.Show("Senha Incorreta!");
                     break;
 
                 case Connection.loginReturn.SUCCESS:
@@ -81,6 +81,20 @@ namespace CFC
                     break;
             }
 
+        }
+
+        private void Window_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Return)
+            {
+                return;
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            tblogin.Focusable = true;
+            Keyboard.Focus(tblogin);
         }
     }
 }

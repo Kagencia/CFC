@@ -73,7 +73,7 @@ namespace CFC
                     break;
 
                 case "Sair":
-                    var response = MessageBox.Show("sair?", "", MessageBoxButton.YesNo, MessageBoxImage.Question);
+                    var response = MessageBox.Show("Realmente deseja sair da aplicação?", "Atenção", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                     if (response == MessageBoxResult.Yes)
                         Environment.Exit(0);
@@ -82,8 +82,13 @@ namespace CFC
 
                 /* MENU CADASTRO*/
                 case "cadastro_alunos":
-                    var caal = new Cadastro_Aluno();
+                    var caal = new Cadastro_Funcionario();
                     caal.ShowDialog();
+                    break;
+
+                case "cadastro_funcionarios":
+                    var cafu = new Cadastro_Funcionario();
+                    cafu.ShowDialog();
                     break;
 
                 case "cadastro_bancos":
@@ -290,9 +295,9 @@ namespace CFC
 
             if (conn.Connect()) {
                 /*Contas a Pagar Resumo*/
-                Structs.conta_a_pagar[] items = conn.GetContasaPagar();
+                Structs.conta_a_pagar[] conta_a_pagar = conn.GetContasaPagar();
 
-                foreach(Structs.conta_a_pagar item in items)
+                foreach(Structs.conta_a_pagar item in conta_a_pagar)
                 {
                     Views.ListBoxItemEX lb = new Views.ListBoxItemEX();
 
@@ -303,9 +308,9 @@ namespace CFC
                 }
 
                 /*Contas a Receber Resumo*/
-                Structs.conta_a_receber[] items2 = conn.GetContasaReceber();
+                Structs.conta_a_receber[] conta_a_receber = conn.GetContasaReceber();
 
-                foreach(Structs.conta_a_receber item in items2)
+                foreach (Structs.conta_a_receber item in conta_a_receber)
                 {
                     Views.ListBoxItemEX lb = new Views.ListBoxItemEX();
 
@@ -313,6 +318,22 @@ namespace CFC
                     lb.ItemPrice = item.Valor.ToString();
 
                     resumo_contas_a_receber_lb.Children.Add(lb);
+                }
+
+                /*Faturas Resumo*/
+                Structs.conta_a_receber[] faturas = conn.GetContasaReceber();
+
+                foreach (Structs.conta_a_receber item in faturas)
+                {
+                    Views.ListBoxItemEX lb = new Views.ListBoxItemEX();
+
+                    lb.ItemName = item.Conta;
+                    lb.ItemPrice = item.Valor.ToString();
+
+                    resumo_faturas_lb.Children.Add(lb);
+                    /*select max(sum(preco))
+                    from negocios
+                    group by cpf*/
                 }
 
             }

@@ -1,4 +1,4 @@
-﻿<Window x:Class="CFC.Views.Cadastro.Cadastro_Aluno"
+﻿<Window x:Class="CFC.Views.Cadastro.Cadastro_Funcionario"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Cadastro_Aluno" Height="449" Width="603">

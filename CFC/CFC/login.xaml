@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="login" Height="208.955" Width="400"
         Closing="Window_Closing"
-        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" WindowStyle="ToolWindow" ResizeMode="NoResize" KeyDown="Window_KeyDown" Loaded="Window_Loaded"
         >
     <Grid>
         <Grid.Background>
@@ -13,7 +13,7 @@
         <Label Content="Senha" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="181,96,0,0"/>
         <TextBox Name="tblogin" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="247,60,0,0"/>
         <TextBox x:Name="tbsenha" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="246,98,0,0"/>
-        <Button Content="Entrar" HorizontalAlignment="Left" Margin="292,130,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Button Content="Entrar" IsDefault="True" Name="btnlogin" HorizontalAlignment="Left" Margin="292,130,0,0" VerticalAlignment="Top" Width="75" Click="login_Click" />
         <Label Content="Seja Bem Vindo" VerticalAlignment="Top" FontSize="20" HorizontalAlignment="Center" Margin="209,16,29,0" Width="154"/>
 
     </Grid>

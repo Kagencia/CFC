@@ -67,6 +67,8 @@ namespace CFC
             return ret.ToArray();
         }
 
+
+
         public Structs.conta_a_receber[] GetContasaReceber()
         {
             List<Structs.conta_a_receber> ret = new List<Structs.conta_a_receber>();

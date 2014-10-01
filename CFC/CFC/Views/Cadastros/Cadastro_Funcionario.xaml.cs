@@ -12,18 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace CFC.Views.Cadastro
+namespace CFC.Views.Cadastros
 {
     /// <summary>
-    /// Interaction logic for Cadastro_Aluno.xaml
+    /// Interaction logic for Cadastro_Funcionario.xaml
     /// </summary>
-    public partial class Cadastro_Aluno : Window
+    public partial class Cadastro_Funcionario : Window
     {
-        public Cadastro_Aluno()
+        public Cadastro_Funcionario()
         {
             InitializeComponent();
         }
-
         private void foto_aluno_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             // Create OpenFileDialog 
@@ -38,10 +37,6 @@ namespace CFC.Views.Cadastro
 
             // Display OpenFileDialog by calling ShowDialog method 
             Nullable<bool> result = dlg.ShowDialog();
-
-
-
-          
 
             // Get the selected file name and display in a TextBox 
             if (result == true)

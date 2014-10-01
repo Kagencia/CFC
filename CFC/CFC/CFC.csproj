@@ -55,6 +55,8 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -123,25 +125,28 @@
     <Compile Include="Views\Arquivo\Arquivo_Contas_A_Pagar.xaml.cs">
       <DependentUpon>Arquivo_Contas_A_Pagar.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Aluno.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Aluno.xaml.cs">
       <DependentUpon>Cadastro_Aluno.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Banco.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Banco.xaml.cs">
       <DependentUpon>Cadastro_Banco.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Colaborador.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Colaborador.xaml.cs">
       <DependentUpon>Cadastro_Colaborador.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Contrato.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Contrato.xaml.cs">
       <DependentUpon>Cadastro_Contrato.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Empresa.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Empresa.xaml.cs">
       <DependentUpon>Cadastro_Empresa.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Tabela_de_Precos.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Funcionario.xaml.cs">
+      <DependentUpon>Cadastro_Funcionario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Cadastros\Cadastro_Tabela_de_Precos.xaml.cs">
       <DependentUpon>Cadastro_Tabela_de_Precos.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Cadastro\Cadastro_Veiculo.xaml.cs">
+    <Compile Include="Views\Cadastros\Cadastro_Veiculo.xaml.cs">
       <DependentUpon>Cadastro_Veiculo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Client.cs" />
@@ -301,31 +306,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Aluno.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Aluno.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Banco.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Banco.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Colaborador.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Colaborador.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Contrato.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Contrato.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Empresa.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Empresa.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Tabela_de_Precos.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Funcionario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Cadastro\Cadastro_Veiculo.xaml">
+    <Page Include="Views\Cadastros\Cadastro_Tabela_de_Precos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Cadastros\Cadastro_Veiculo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

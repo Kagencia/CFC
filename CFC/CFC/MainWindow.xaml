@@ -22,8 +22,9 @@
                 <Separator />
                 <MenuItem x:Name="Sair" Header="_Sair" Click="clickHook" />
             </MenuItem>
-            <MenuItem Header="Cadastro">
-                <MenuItem Header="Alunos" x:Name="cadastro_alunos" Click="clickHook" />
+            <MenuItem Header="Cadastros">
+                <MenuItem Header="Ficha de Alunos" x:Name="cadastro_alunos" Click="clickHook" />
+                <MenuItem Header="Funcionários" x:Name="cadastro_funcionarios" Click="clickHook" />
                 <MenuItem Header="Bancos" x:Name="cadastro_bancos" Click="clickHook" />
                 <MenuItem Header="Colaboradores" x:Name="cadastro_colaboradores" Click="clickHook" />
                 <MenuItem Header="Contratos" x:Name="cadastro_contratos" Click="clickHook" />
@@ -102,7 +103,8 @@
             </Grid.ColumnDefinitions>
             <Image Grid.Row="0" Grid.Column="0" Source="Images/user.jpg" VerticalAlignment="Top" RenderTransformOrigin="0.535,0.533" HorizontalAlignment="Left" Margin="20,20,0,0" Stretch="UniformToFill" MaxWidth="300" Height="150" Width="180"/>
             <GroupBox Header="Faturas" HorizontalAlignment="Left" Margin="20,20,0,0" Grid.Row="1" VerticalAlignment="Top" MinWidth="170" MinHeight="150" Height="150" Width="180">
-                <Label Content="Não Há Faturas" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center"/>
+                <StackPanel Name="resumo_faturas_lb">
+                </StackPanel>
             </GroupBox>
 
             <Calendar VerticalAlignment="Top" Margin="20,20,0,0" HorizontalAlignment="Left" DockPanel.Dock="Top" Grid.Row="2" Height="168" Width="179"/>
@@ -152,7 +154,6 @@
 
             <GroupBox Name="Item2" Header="Contas a Receber" Margin="20" Grid.Column="2" Height="150">
                 <StackPanel Name="resumo_contas_a_receber_lb">
-                    
                 </StackPanel>
             </GroupBox>
 
