@@ -182,7 +182,7 @@ namespace CFC
                 /* MENU RELATÓRIOS*/
                 case "rel_alunos":
                     var real = new Relatorios_Alunos();
-                    real.ShowDialog();
+                    real.ShowEx(conn);
                     break;
                 case "aniversariantes":
                     var an = new Relatorios_Aniversariantes();
@@ -300,7 +300,6 @@ namespace CFC
                 foreach(Structs.conta_a_pagar item in conta_a_pagar)
                 {
                     Views.ListBoxItemEX lb = new Views.ListBoxItemEX();
-
                     lb.ItemName = item.Conta;
                     lb.ItemPrice = item.Valor.ToString();
 
@@ -322,19 +321,37 @@ namespace CFC
 
                 /*Faturas Resumo*/
                 Structs.conta_a_receber[] faturas = conn.GetContasaReceber();
+                float total = 0;
 
                 foreach (Structs.conta_a_receber item in faturas)
                 {
                     Views.ListBoxItemEX lb = new Views.ListBoxItemEX();
-
+                    total += item.Valor;
                     lb.ItemName = item.Conta;
                     lb.ItemPrice = item.Valor.ToString();
 
                     resumo_faturas_lb.Children.Add(lb);
-                    /*select max(sum(preco))
-                    from negocios
-                    group by cpf*/
+                    /*
+                    Select max(sum(preco))
+                    from Contas_a_Receber
+                    */
                 }
+
+                Views.ListBoxItemEX lbTotal = new Views.ListBoxItemEX();
+                lbTotal.IsTotal = true;
+                lbTotal.ItemName = "Total";
+                lbTotal.ItemPrice = total.ToString();
+
+                if (Convert.ToSingle(lbTotal.ItemPrice) < 0)
+                {
+                    lbTotal.Background = Brushes.Red;
+                }
+                else
+                {
+                    lbTotal.Background = Brushes.Green;
+                }
+
+                resumo_faturas_lb.Children.Add(lbTotal);
 
             }
             else

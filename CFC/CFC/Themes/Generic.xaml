@@ -5,15 +5,39 @@
 
 
     <Style TargetType="{x:Type local:ListBoxItemEX}">
-        <Setter Property="Height" Value="15" />
+        <Setter Property="Height" Value="auto" />
         
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ListBoxItemEX}">
-                    <Grid>
-                        <TextBlock Text="{TemplateBinding ItemName}" />
-                        <TextBlock Text="{TemplateBinding ItemPrice}" HorizontalAlignment="Right" />
-                    </Grid>
+                    <Border Name="mainborder" BorderThickness="0,0,0,0"
+                            BorderBrush="Gray"
+                            Background="{TemplateBinding Background}"
+                            Padding="3">
+                        <Grid>
+                            <TextBlock Name="tbitemname" Text="{TemplateBinding ItemName}" />
+                            <TextBlock Name="tbitemprice" Text="{TemplateBinding ItemPrice}" HorizontalAlignment="Right" />
+                        </Grid>
+                    </Border>
+                    
+                    <ControlTemplate.Triggers>
+                        <MultiDataTrigger>
+                            <MultiDataTrigger.Conditions>
+                                <Condition Binding="{Binding Path=IsTotal, RelativeSource={RelativeSource Self}}" Value="False" />
+                                <Condition Binding="{Binding Path=IsSelected, RelativeSource={RelativeSource Self}}" Value="True" />
+                            </MultiDataTrigger.Conditions>
+                            
+                            <Setter Property="Background" Value="Aqua" />
+                        </MultiDataTrigger>
+                        
+                        <Trigger Property="IsTotal" Value="True">
+                            <Setter TargetName="mainborder" Property="BorderThickness" Value="0,1,0,0" />
+                            <Setter Property="Height" Value="Auto" />
+                            <Setter TargetName="mainborder" Property="Margin" Value="0,5,0,0" />
+                            <!--esquerda,topo,direita,baixo-->
+                            <Setter TargetName="tbitemname" Property="FontWeight" Value="Bold" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

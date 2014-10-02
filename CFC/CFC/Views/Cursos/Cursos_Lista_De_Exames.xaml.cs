@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GrupoAlfacentauro.WPF.Agenda.UI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,16 @@ namespace CFC.Views.Cursos
         public Cursos_Lista_De_Exames()
         {
             InitializeComponent();
+
+            ComponenteAgenda agendaExames = new ComponenteAgenda()
+            {
+                StrConexao_Host = @"KLAUS\KLAUSSERVER",
+                StrConexao_Usuario = "Klaus",
+                StrConexao_Senha = "49005120"
+            };
+
+            GradeAgenda.Children.Add(agendaExames);
+
         }
     }
 }

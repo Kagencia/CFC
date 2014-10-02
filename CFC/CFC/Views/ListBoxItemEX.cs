@@ -53,6 +53,10 @@ namespace CFC.Views
 
         public static readonly DependencyProperty ItemNameProperty = DependencyProperty.Register("ItemName", typeof(string), typeof(ListBoxItemEX), new PropertyMetadata(String.Empty));
         public static readonly DependencyProperty ItemPriceProperty = DependencyProperty.Register("ItemPrice", typeof(string), typeof(ListBoxItemEX), new PropertyMetadata("R$ 00,00"));
+        public static readonly DependencyProperty IsTotalProperty = DependencyProperty.Register("IsTotal", typeof(bool), typeof(ListBoxItemEX), new PropertyMetadata(false));
+
+        public static readonly DependencyProperty IsSelectedProperty = DependencyProperty.Register("IsSelected", typeof(bool), typeof(ListBoxItemEX), new PropertyMetadata(false));
+
 
         public string ItemName
         {
@@ -64,6 +68,29 @@ namespace CFC.Views
         {
             get { return (string)GetValue(ItemPriceProperty); }
             set { SetValue(ItemPriceProperty, value); }
+        }
+
+        public bool IsTotal
+        {
+            get { return (bool)GetValue(IsTotalProperty); }
+            set { SetValue(IsTotalProperty, value); }
+        }
+
+        public bool IsSelected
+        {
+            get { return (bool)GetValue(IsSelectedProperty); }
+            set { SetValue(IsSelectedProperty, value); }
+        }
+
+        protected override void OnMouseDown(MouseButtonEventArgs e)
+        {
+            this.IsSelected = true;
+            foreach(Control el in (Parent as StackPanel).Children)
+            {
+                if (el.GetType() == typeof(ListBoxItemEX) && el != this)
+                    (el as ListBoxItemEX).IsSelected = false;
+            }
+            base.OnMouseDown(e);
         }
     }
 }

@@ -1,8 +1,11 @@
 ﻿<Window x:Class="CFC.Views.Cursos.Cursos_Lista_De_Exames"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Cursos_Lista_De_Exames" Height="300" Width="300">
-    <Grid>
+        Title="Agenda de Exames" Height="300"
+        Width="300"
+        WindowStartupLocation="CenterScreen" 
+        WindowState="Maximized"> 
+    <Grid x:Name="GradeAgenda">
         
     </Grid>
 </Window>

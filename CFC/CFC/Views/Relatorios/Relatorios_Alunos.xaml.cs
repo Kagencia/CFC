@@ -25,18 +25,32 @@ namespace CFC.Views.Relatorios
         {
             InitializeComponent();
         }
-        SqlConnection conn;
+        Connection conn;
+
+
+        public void ShowEx(Connection conn)
+        {
+            this.conn = conn;
+            this.ShowDialog();
+        }
+
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            conn = new SqlConnection(@"Data Source=(localdb)\Projects;Initial Catalog=cfcdb1;Integrated Security=True;Encrypt=False;TrustServerCertificate=False");
-            conn.Open();
-            SqlCommand query = new SqlCommand("SELECT * FROM Alunos", conn);
-            using(SqlDataAdapter da = new SqlDataAdapter(query))
-            {
-                DataSet Alunos = new DataSet();
-                da.Fill(Alunos, "Alunos");
-                dg_relatorio_alunos.DataContext = Alunos;
-            }
+            conn.preencherDataGridAlunos(dg_relatorio_alunos);
+        }
+
+        private void btn_Alterar_Click(object sender, RoutedEventArgs e)
+        {
+         
+        }
+
+        private void btn_Salvar_Click(object sender, RoutedEventArgs e)
+        {
+        }
+
+        private void dg_relatorio_alunos_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+      
         }
     }
 }

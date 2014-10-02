@@ -49,25 +49,137 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.BonusSkins.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Data.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Utils.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Core.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Docking.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Docking.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Layout.v13.1.Core">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Layout.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.NavBar.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.NavBar.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Ribbon.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Ribbon.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Scheduler.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Scheduler.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.DXStyle.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.DXStyle.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.LightGray.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.LightGray.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisDark.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.MetropolisDark.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.MetropolisLight.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.MetropolisLight.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Black.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2007Black.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Blue.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2007Blue.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2007Silver.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2007Silver.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Black.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2010Black.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Blue.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2010Blue.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2010Silver.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2010Silver.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Office2013.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Office2013.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.Seven.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.Seven.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.TouchlineDark.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.TouchlineDark.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Themes.VS2010.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.Xpf.Themes.VS2010.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.XtraBars.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.XtraScheduler.v13.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v13.1.Core">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\DevExpress.XtraScheduler.v13.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="GrupoAlfacentauro.WPF.Agenda.UI">
+      <HintPath>..\..\..\..\..\Desktop\Biblios.Satellites.pt-BR.Necessários\GrupoAlfacentauro.WPF.Agenda.UI.dll</HintPath>
+    </Reference>
     <Reference Include="SQLite.NET, Version=0.21.1869.3794, Culture=neutral, PublicKeyToken=c273bd375e695f9c">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Debug\SQLite.NET.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
-    <Reference Include="System.Xml" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsBase">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationFramework">
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

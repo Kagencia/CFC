@@ -5,6 +5,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CFC;
+using System.Data;
+using System.Windows.Controls;
 
 namespace CFC
 {
@@ -117,6 +119,17 @@ namespace CFC
                 {
                     return loginReturn.INVALID_USER;
                 }
+            }
+        }
+
+        public void preencherDataGridAlunos(DataGrid v)
+        {
+            SqlCommand query = new SqlCommand("SELECT * FROM Alunos", conn);
+            using (SqlDataAdapter da = new SqlDataAdapter(query))
+            {
+                DataSet Alunos = new DataSet();
+                da.Fill(Alunos, "Alunos");
+                v.DataContext = Alunos;
             }
         }
     }
